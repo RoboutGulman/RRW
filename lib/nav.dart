@@ -34,25 +34,23 @@ class _NavState extends State<Nav> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar:  BottomNavigationBar(
+        showUnselectedLabels:true,
+        type: BottomNavigationBarType.fixed,
         fixedColor: Colors.blue,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              backgroundColor: Colors.grey,
               icon:  Icon(CustomIcons.seal_fill),
               title: Text('Рейтинг'),
             ),
            BottomNavigationBarItem(
-              backgroundColor: Colors.grey,
               icon:  Icon(CustomIcons.arrow_up_doc_fill),
               title: Text('Приказы'),
             ),
             BottomNavigationBarItem(
-              backgroundColor: Colors.grey,
               icon:  Icon(CustomIcons.die_face_4_fill),
               title: Text('Исполнение'),
             ),
              BottomNavigationBarItem(
-              backgroundColor: Colors.grey,
               icon:  Icon(CustomIcons.creditcard_fill),
               title: Text('Банк'),
             ),
