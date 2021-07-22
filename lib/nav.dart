@@ -3,6 +3,7 @@ import 'package:flutter_application_1/pages/Bank_Screen.dart';
 import 'package:flutter_application_1/pages/Execution_Screen.dart';
 import 'package:flutter_application_1/pages/Orders_Screen.dart';
 import 'package:flutter_application_1/pages/Rating_Screen.dart';
+import 'package:flutter_application_1/custom_icons.dart';
 
 class Nav extends StatefulWidget {
   const Nav({ Key? key }) : super(key: key);
@@ -33,21 +34,26 @@ class _NavState extends State<Nav> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar:  BottomNavigationBar(
+        fixedColor: Colors.blue,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon:  Icon(Icons.brightness_5),
+              backgroundColor: Colors.grey,
+              icon:  Icon(CustomIcons.seal_fill),
               title: Text('Рейтинг'),
             ),
            BottomNavigationBarItem(
-              icon:  Icon(Icons.message),
+              backgroundColor: Colors.grey,
+              icon:  Icon(CustomIcons.arrow_up_doc_fill),
               title: Text('Приказы'),
             ),
             BottomNavigationBarItem(
-              icon:  Icon(Icons.person),
+              backgroundColor: Colors.grey,
+              icon:  Icon(CustomIcons.die_face_4_fill),
               title: Text('Исполнение'),
             ),
              BottomNavigationBarItem(
-              icon:  Icon(Icons.person),
+              backgroundColor: Colors.grey,
+              icon:  Icon(CustomIcons.creditcard_fill),
               title: Text('Банк'),
             ),
         ],

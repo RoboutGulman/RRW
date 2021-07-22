@@ -5,9 +5,11 @@ class Execution extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Execution')
-      
+    return Scaffold(
+     appBar: AppBar(
+       title: Text('Иcполнение'),
+       centerTitle: true, 
+       )
     );
   }
 }
